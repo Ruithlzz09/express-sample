@@ -1,5 +1,5 @@
 const {apiRoutes} = require('./api')
 
-module.exports = async (app) => {
+module.exports = (app) => {
   apiRoutes(app)
 }

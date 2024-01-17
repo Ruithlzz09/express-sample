@@ -1,8 +1,8 @@
 const chai = require("chai");
 const app = require("../src/utilities/sample2");
 
-describe("Check Sample test suit", async function () {
-  before(() => console.log("Testing Initiated"));
+describe("Check Utility test suit", async function () {
+  before(() => console.log("Check Utility test Initiated"));
 
   it("TestCase 1", async function () {
     const response = await app.getName();
@@ -10,6 +10,6 @@ describe("Check Sample test suit", async function () {
   });
 
   after(function () {
-    console.log("Testing Done");
+    console.log("Check Utility test Done");
   });
 });

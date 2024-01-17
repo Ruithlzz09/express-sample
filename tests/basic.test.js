@@ -4,8 +4,8 @@ const app = require("../src/app");
 chai.use(chaiHttp);
 const requester = chai.request(app).keepOpen();
 
-describe("Health test suit", async function () {
-  before(() => console.log("Testing Initiated"));
+describe("Health Api test suit", async function () {
+  before(() => console.log("Health Api test Initiated"));
 
   it("Health Check", async function () {
     const response = await requester.get("/liveness");
@@ -15,6 +15,6 @@ describe("Health test suit", async function () {
 
   after(function () {
     requester.close();
-    console.log("Testing Done");
+    console.log("Health Api test Done");
   });
 });
